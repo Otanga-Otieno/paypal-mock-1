@@ -22,7 +22,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $curl_response = curl_exec($curl);
 
-$json = json_decode($curl_response);
+$json = json_decode($curl_response, true);
 print_r($json);
 
 ?>
