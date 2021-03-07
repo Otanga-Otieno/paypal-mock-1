@@ -2,6 +2,7 @@
 
 require 'functions.php';
 
-echo(get_access_token());
+$token = get_access_token();
+echo $token;
 
 ?>
