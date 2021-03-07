@@ -24,6 +24,6 @@ $curl_response = curl_exec($curl);
 
 $json = json_decode($curl_response, true);
 $token = $json['access_token'];
-print_r($token);
+echo($token);
 
 ?>
