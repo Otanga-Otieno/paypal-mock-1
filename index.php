@@ -23,6 +23,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $curl_response = curl_exec($curl);
 
 $json = json_decode($curl_response, true);
-print_r($json['access_token']);
+$token = $json['access_token'];
+print_r($token);
 
 ?>
