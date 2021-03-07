@@ -8,7 +8,7 @@ $url = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
 
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_HEADER, false);
+    curl_setopt($curl, CURLOPT_HEADER, true);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array(
         "Accept: application/json",
         "Accept-Language: en_US"
