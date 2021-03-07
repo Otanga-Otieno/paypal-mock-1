@@ -23,5 +23,6 @@ curl_setopt($curl, CURLOPT_POST, true);
 $curl_response = curl_exec($curl);
 
 $json = json_decode($curl_response);
+print_r($json);
 
 ?>
