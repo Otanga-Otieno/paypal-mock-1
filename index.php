@@ -2,6 +2,6 @@
 
 require 'functions.php';
 
-$token = get_access_token();
+get_access_token();
 
 ?>
