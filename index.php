@@ -18,11 +18,10 @@ curl_setopt($curl, CURL_SSLVERSION, 6);
 curl_setopt($curl, CURLOPT_USERPWD, $client_id.":".$client_secret);
 curl_setopt($curl, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
 curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+//curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $curl_response = curl_exec($curl);
 
 $json = json_decode($curl_response);
-$token = $json['access_token'];
 
 ?>
