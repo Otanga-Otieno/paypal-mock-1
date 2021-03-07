@@ -18,14 +18,14 @@ function get_access_token() {
     curl_setopt($curl, CURLOPT_USERPWD, $client_id.":".$client_secret);
     curl_setopt($curl, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
     curl_setopt($curl, CURLOPT_POST, true);
-    curl_setopt($curl, CURL_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
     $curl_response = curl_exec($curl);
 
     $json = json_decode($curl_response);
     $access_token = $json['access_token'];
 
-    echo($access_token);
+    return $access_token;
 
 }
 
