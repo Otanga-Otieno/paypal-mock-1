@@ -22,9 +22,9 @@ $url = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
 
     $curl_response = curl_exec($curl);
 
-    $json = json_decode($curl_response, true);
+    /*$json = json_decode($curl_response, true);
     $access_token = $json['access_token'];
 
-    echo($access_token);
+    echo($access_token);*/
 
 ?>
