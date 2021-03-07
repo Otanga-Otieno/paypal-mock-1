@@ -18,6 +18,7 @@ $url = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
     curl_setopt($curl, CURLOPT_USERPWD, $client_id.":".$client_secret);
     curl_setopt($curl, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
     curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, false);
 
     $curl_response = curl_exec($curl);
 
