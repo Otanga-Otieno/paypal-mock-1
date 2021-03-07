@@ -3,6 +3,6 @@
 require 'functions.php';
 
 $token = get_access_token();
-echo "Token: ".$token;
+//echo "Token: ".$token;
 
 ?>
