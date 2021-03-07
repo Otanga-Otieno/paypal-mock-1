@@ -23,9 +23,9 @@ function get_access_token() {
     $curl_response = curl_exec($curl);
 
     $json = json_decode($curl_response);
-    $access_token = $json->access_token;
+    $access_token = $json['access_token'];
 
-    print_r($access_token);
+    echo($access_token);
 
 }
 
