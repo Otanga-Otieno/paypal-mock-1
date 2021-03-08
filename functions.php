@@ -50,8 +50,8 @@ function post_order() {
             }
           }
         ],
-        {
-            "return_url": "https://otanga.co.ke/paypal-1/callback.php";
+        "application_context": {
+            "return_url": "https://otanga.co.ke/paypal-1/callback.php"
         }
       }';
 	curl_setopt($curl, CURLOPT_POST, true);
