@@ -2,7 +2,6 @@
 
 require 'functions.php';
 
-$token = get_access_token();
-//echo "Token: ".$token;
+post_order();
 
 ?>

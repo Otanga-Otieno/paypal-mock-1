@@ -28,4 +28,35 @@ function get_access_token() {
 
 }
 
+
+
+
+
+function post_order() {
+
+    $url = "https://api-m.sandbox.paypal.com/v2/checkout/orders";
+
+    $curl = curl_init();
+    $access_token = get_access_token();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$access_token));
+    $curl_post_data = array(
+        "intent" => "CAPTURE",
+        "purchase_units" => array(
+            "amount" => array(
+                "currency_code"=> "USD",
+                "value"=> "1.00"
+            ),
+        ),
+    );
+	curl_setopt($curl, CURLOPT_POST, true);
+	curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($curl_post_data));
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);	
+	$curl_response = curl_exec($curl);
+
+    $arr = json_decode($curl_response, true);
+    print_r($arr);
+
+}
+
 ?>
