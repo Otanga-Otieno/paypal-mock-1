@@ -49,7 +49,10 @@ function post_order() {
               "value": "1.00"
             }
           }
-        ]
+        ],
+        "application_context": {
+            "return_url": "https://otanga.co.ke/paypal-1/callback.php";
+        }
       }';
 	curl_setopt($curl, CURLOPT_POST, true);
 	curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
