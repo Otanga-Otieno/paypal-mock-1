@@ -46,8 +46,8 @@ function post_order() {
             "amount" => array(
                 "currency_code"=> "USD",
                 "value"=> "1.00"
-            ),
-        ),
+            )
+        )
     );
 	curl_setopt($curl, CURLOPT_POST, true);
 	curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($curl_post_data));
