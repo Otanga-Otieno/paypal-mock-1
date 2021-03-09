@@ -46,7 +46,7 @@ function post_order() {
         {
           "amount": {
             "currency_code": "USD",
-            "value": "1.00"
+            "value": "0.01"
           }
         }
       ],
