@@ -59,8 +59,11 @@ function post_order() {
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);	
   $curl_response = curl_exec($curl);
 
-  $arr = json_decode($curl_response, true);
-  print_r($arr);
+  $json = json_decode($curl_response, true);
+  print_r($json);
+
+  $approve_link = $json['links'][1];
+  header('Location: '.$approve_link);
 
 
 }
