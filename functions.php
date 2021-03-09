@@ -62,7 +62,7 @@ function post_order() {
   $json = json_decode($curl_response, true);
   print_r($json);
 
-  $approve_link = $json['links'][1];
+  $approve_link = $json['links'][1]['href'];
   print_r($approve_link);
 
 
