@@ -63,7 +63,7 @@ function post_order() {
   print_r($json);
 
   $approve_link = $json['links'][1]['href'];
-  print_r($approve_link);
+  header('Location: '.$approve_link);
 
 
 }
