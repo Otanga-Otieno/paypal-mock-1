@@ -71,7 +71,7 @@ function post_order() {
 
 function capture_order($token, $payer_id) {
 
-  $url = "/v2/checkout/orders/$token/capture";
+  $url = "https://api.sandbox.paypal.com/v2/checkout/orders/$token/capture";
   $access_token = get_access_token();
 
   $curl = curl_init();
