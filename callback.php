@@ -1,7 +1,8 @@
 <?php
 
-$json = file_get_contents('php://input');
-$arr = json_decode($json, true);
-print_r($arr);
+$token = $_GET['token'];
+$payer_id = $_GET['PayerID'];
+
+capture_order($token, $payer_id);
 
 ?>
