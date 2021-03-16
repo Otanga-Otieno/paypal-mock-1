@@ -2,6 +2,4 @@
 
 require '../functions.php';
 
-post_order();
-
-?>
+get_invoice_number();

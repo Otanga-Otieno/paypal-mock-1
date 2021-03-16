@@ -93,4 +93,25 @@ function capture_order($token, $payer_id) {
 
 }
 
+
+function get_invoice_number() {
+
+  $url = "https://api-m.sandbox.paypal.com/v2/invoicing/generate-next-invoice-number";
+  $access_token = get_access_token();
+
+  $curl = curl_init();
+  curl_setopt($curl, CURLOPT_URL, $url);
+  curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+    'Content_Type:application/json',
+    'Authorization:Bearer '.$access_token)
+  );
+  curl_setopt($curl, CURLOPT_POST, true);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);	
+  $curl_response = curl_exec($curl);
+
+  $arr = json_decode($curl_response, true);
+  print_r($arr);
+
+}
+
 ?>
