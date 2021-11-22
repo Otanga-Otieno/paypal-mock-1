@@ -16,7 +16,7 @@
                 <div>
                     <img src="./Images/colorful-rainbows.jpg" alt="" style="max-width: 100%;"><br>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
-                    <button class="btn btn-primary p-3">$0.05</button>
+                    <button class="btn btn-primary m-3">$0.05</button>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                 <div>
                     <img src="./Images/rainbow-cake-layers.jpg" alt="" style="max-width: 100%;"><br>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
-                    <button class="btn btn-primary p-3">$0.10</button>
+                    <button class="btn btn-primary m-3">$0.10</button>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <div>
                     <img src="./Images/field-of-orange-flowers.jpg" alt="" style="max-width: 100%;"><br>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
-                    <button class="btn btn-primary p-3">$0.25</button>
+                    <button class="btn btn-primary m-3">$0.25</button>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                 <div>
                     <img src="./Images/autumn-flowers-in-bloom.jpg" alt="" style="max-width: 100%;"><br>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
-                    <button class="btn btn-primary p-3">$0.50</button>
+                    <button class="btn btn-primary m-3">$0.50</button>
                 </div>
             </div>
         </div>
