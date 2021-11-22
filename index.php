@@ -8,40 +8,40 @@
 </head>
 
 
-<div class="container">
+<div class="container py-5">
     <div class="row">
         <div class="col-12 col-md-3">
-            <div class="card" style="text-align: center;">
+            <div class="card p-2" style="text-align: center;">
                 <div>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                    <button>$0.05</button>
+                    <button class="btn btn-primary">$0.05</button>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-3">
-            <div class="card" style="text-align: center;">
+            <div class="card p-2" style="text-align: center;">
                 <div>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                    <button>$0.10</button>
+                    <button class="btn btn-primary">$0.10</button>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-3">
-            <div class="card" style="text-align: center;">
+            <div class="card p-2" style="text-align: center;">
                 <div>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                    <button>$0.25</button>
+                    <button class="btn btn-primary">$0.25</button>
                 </div>
             </div>
         </div>
 
         <div class="col-12 col-md-3">
-            <div class="card" style="text-align: center;">
+            <div class="card p-2" style="text-align: center;">
                 <div>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                    <button>$0.50</button>
+                    <button class="btn btn-primary">$0.50</button>
                 </div>
             </div>
         </div>
