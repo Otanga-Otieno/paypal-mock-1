@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-12 col-md-3">
             <div class="card p-2" style="text-align: center;">
-                <form action="./pay.php">
+                <form action="./pay.php" method="post">
                     <div>
                         <img src="./Images/colorful-rainbows.jpg" alt="" style="max-width: 100%;"><br>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
