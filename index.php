@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alien Tokens</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
     <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
