@@ -51,7 +51,7 @@ function post_order($amount) {
         }
       ],
       "application_context": {
-          "return_url": "https://otanga.co.ke/paypal-1/order/callback.php"
+          "return_url": "https://otanga.co.ke/Projects/PayPal-Mock-App/callback.php"
       }
     }';
   curl_setopt($curl, CURLOPT_POST, true);
