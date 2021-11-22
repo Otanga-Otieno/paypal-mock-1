@@ -13,11 +13,14 @@
     <div class="row">
         <div class="col-12 col-md-3">
             <div class="card p-2" style="text-align: center;">
-                <div>
-                    <img src="./Images/colorful-rainbows.jpg" alt="" style="max-width: 100%;"><br>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
-                    <button class="btn btn-primary m-3">$0.05</button>
-                </div>
+                <form action="./pay.php">
+                    <div>
+                        <img src="./Images/colorful-rainbows.jpg" alt="" style="max-width: 100%;"><br>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
+                        <input type="text" name="amount" value="0.05" hidden>
+                        <button class="btn btn-primary m-3">$0.05</button>
+                    </div>
+                </form>
             </div>
         </div>
 

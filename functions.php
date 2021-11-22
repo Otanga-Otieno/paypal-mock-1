@@ -32,7 +32,7 @@ function get_access_token() {
 
 
 
-function post_order() {
+function post_order($amount) {
 
   $url = "https://api-m.sandbox.paypal.com/v2/checkout/orders";
 
@@ -46,7 +46,7 @@ function post_order() {
         {
           "amount": {
             "currency_code": "USD",
-            "value": "0.01"
+            "value": "'.$amount.'"
           }
         }
       ],
