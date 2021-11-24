@@ -14,6 +14,14 @@ function qdec(qid) {
     cartCount();
 }
 
+function forceDec(qid) {
+    var count = document.getElementById("qcount" + qid);
+    var countQ = count.value;
+    count.value = --countQ
+
+    cartCount();
+}
+
 function showQuantityCounter(qid) {
     var priceBtn = document.getElementById("pricebutton" + qid);
     priceBtn.setAttribute("hidden", true);
@@ -21,6 +29,7 @@ function showQuantityCounter(qid) {
     var qCount = document.getElementById("qcounter" + qid);
     qCount.removeAttribute("hidden");
 
+    qinc(qid);
     cartCount();
 }
 
@@ -30,6 +39,8 @@ function hideQuantityCounter(qid) {
 
     var priceBtn = document.getElementById("pricebutton" + qid);
     priceBtn.removeAttribute("hidden");
+
+    forceDec(qid);
 }
 
 function cartCount() {
@@ -45,8 +56,6 @@ function cartCount() {
             var amount = Number(price) * Number(qcount.value);
             items = items + Number(qcount.value);
             totalAmount = totalAmount + amount;
-            //console.log(amount)
-            //console.log(window.getComputedStyle(qCounter).display);
         }
     }
 

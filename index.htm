@@ -11,63 +11,61 @@
 
 
 <div class="container py-5" style="text-align: center;">
-    <div class="row">
-        <div class="col-12 col-md-3">
-            <div class="card p-2" style="text-align: center;">
-                <form action="./pay.php" method="post">
+    <form action="./pay.php" method="post">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card p-2" style="text-align: center;">
                     <div>
                         <img src="./Images/colorful-rainbows.jpg" alt="" style="max-width: 100%;"><br>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
                         <input type="text" name="amount" id="price1" value="0.05" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton1" type="button" onclick="showQuantityCounter(1)">$0.05</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter1" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(1)">-</span><input class="bg-white text-dark" id="qcount1" value="1" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(1)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter1" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(1)">-</span><input class="bg-white text-dark" name="qty1" id="qcount1" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(1)">+</span></span>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <div class="card p-2" style="text-align: center;">
-                <form action="./pay.php" method="post">
+    
+            <div class="col-12 col-md-3">
+                <div class="card p-2" style="text-align: center;">
                     <div>
                         <img src="./Images/rainbow-cake-layers.jpg" alt="" style="max-width: 100%;"><br>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
                         <input type="text" name="amount" id="price2" value="0.10" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton2" type="button" onclick="showQuantityCounter(2)">$0.10</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter2" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(2)">-</span><input class="bg-white text-dark" id="qcount2" value="1" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(2)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter2" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(2)">-</span><input class="bg-white text-dark" name="qty2" id="qcount2" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(2)">+</span></span>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <div class="card p-2" style="text-align: center;">
-                <form action="./pay.php" method="post">
+    
+            <div class="col-12 col-md-3">
+                <div class="card p-2" style="text-align: center;">
                     <div>
                         <img src="./Images/field-of-orange-flowers.jpg" alt="" style="max-width: 100%;"><br>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
                         <input type="text" name="amount" id="price3" value="0.25" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton3" type="button" onclick="showQuantityCounter(3)">$0.25</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter3" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(3)">-</span><input class="bg-white text-dark" id="qcount3" value="1" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(3)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter3" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(3)">-</span><input class="bg-white text-dark" name="qty3" id="qcount3" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(3)">+</span></span>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <div class="card p-2" style="text-align: center;">
-                <form action="./pay.php" method="post">
+    
+            <div class="col-12 col-md-3">
+                <div class="card p-2" style="text-align: center;">
                     <div>
                         <img src="./Images/autumn-flowers-in-bloom.jpg" alt="" style="max-width: 100%;"><br>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br>
                         <input type="text" name="amount" id="price4" value="0.50" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton4" type="button" onclick="showQuantityCounter(4)">$0.50</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter4" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(4)">-</span><input class="bg-white text-dark" id="qcount4" value="1" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(4)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter4" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(4)">-</span><input class="bg-white text-dark" name="qty4" id="qcount4" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(4)">+</span></span>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="p-3">
+            <button class="btn btn-lg btn-primary" type="submit">CHECKOUT</button>
+        </div>
+    </form>
 
     <div class="p-3">
         <span><h3>Total cost: $<span id="totalamt">0.00</span></h3></span>
