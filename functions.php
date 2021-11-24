@@ -32,7 +32,7 @@ function get_access_token() {
 
 
 
-function post_order($amount) {
+function post_order($amount, $one, $two, $three, $four) {
 
   $url = "https://api-m.sandbox.paypal.com/v2/checkout/orders";
 
@@ -51,7 +51,7 @@ function post_order($amount) {
         }
       ],
       "application_context": {
-          "return_url": "https://otanga.co.ke/Projects/PayPal-Mock-App/callback.php"
+          "return_url": "https://otanga.co.ke/Projects/PayPal-Mock-App/callback.php?one='.$one.'&two='.$two.'&three='.$three.'&four='.$four.'"
       }
     }';
   curl_setopt($curl, CURLOPT_POST, true);
