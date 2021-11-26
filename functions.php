@@ -114,4 +114,59 @@ function get_invoice_number() {
 
 }
 
+/*************************** Token functions ***************************/
+
+function generateAlienTokens($type, $quantity) {
+
+  $arr = [];
+
+  for($i=0; $i<$quantity; $i++) {
+      $token = bin2hex(openssl_random_pseudo_bytes(5*$type));
+      array_push($arr, $token);
+  }
+
+  return $arr;
+
+}
+
+function generateMultiToken($one, $two, $three, $four) {
+  $arr = array();
+
+  if ($one > 0) array_merge($arr, generateAlienTokens(1, $one));
+  if ($two> 0) array_merge($arr, generateAlienTokens(2, $two));
+  if ($three > 0) array_merge($arr, generateAlienTokens(3, $three));
+  if ($four > 0) array_merge($arr, generateAlienTokens(4, $four));
+
+  return $arr;
+}
+
+function getTokenType($token) {
+
+  $len = strlen($token);
+
+  switch($token) {
+      case 10:
+          return "Kepler-186f";
+          break;
+      case 20:
+          return "Kepler-452b";
+          break;
+      case 30:
+          return "Kepler-22b";
+          break;
+      default:
+          return "Gliese 667 Cc";
+  }
+
+}
+
+function unrollTokens($arr) {
+  $size = count($arr);
+
+  for($i=0; $i<$size; $i++) {
+      echo nl2br($arr[$i]." - ".getTokenType($arr[$i])."\n");
+  }
+
+}
+
 ?>
