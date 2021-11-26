@@ -132,13 +132,14 @@ function generateAlienTokens($type, $quantity) {
 function generateMultiToken($one, $two, $three, $four) {
   $arr = array();
 
-  if ($one > 0) array_merge($arr, generateAlienTokens(1, $one));
-  if ($two> 0) array_merge($arr, generateAlienTokens(2, $two));
-  if ($three > 0) array_merge($arr, generateAlienTokens(3, $three));
-  if ($four > 0) array_merge($arr, generateAlienTokens(4, $four));
+  if ($one > 0) $arr = array_merge($arr, generateAlienTokens(1, $one));
+  if ($two> 0) $arr = array_merge($arr, generateAlienTokens(2, $two));
+  if ($three > 0) $arr = array_merge($arr, generateAlienTokens(3, $three));
+  if ($four > 0) $arr = array_merge($arr, $t = generateAlienTokens(4, $four));
 
   return $arr;
 }
+
 
 function getTokenType($token) {
 
