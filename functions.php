@@ -89,7 +89,7 @@ function capture_order($token, $payer_id) {
   $curl_response = curl_exec($curl);
 
   $arr = json_decode($curl_response, true);
-  print_r($arr);
+  return $arr;
 
 }
 

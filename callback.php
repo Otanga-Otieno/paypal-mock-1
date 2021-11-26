@@ -9,8 +9,9 @@ $alienTokenFour = $_GET['four'];
 $token = $_GET['token'];
 $payer_id = $_GET['PayerID'];
 
-capture_order($token, $payer_id);
-echo nl2br("\n\n\n\n\n");
+$order = capture_order($token, $payer_id);
+echo nl2br($order["payer"]["email_address"]."\n\n");
+
 
 $alienTokens = generateMultiToken($alienTokenOne, $alienTokenTwo, $alienTokenThree, $alienTokenFour);
 
