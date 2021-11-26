@@ -143,7 +143,7 @@ function generateMultiToken($one, $two, $three, $four) {
 
 function getTokenType($token) {
 
-  $len = strlen($token);
+  $len = strlen($len);
 
   switch($token) {
       case 10:
