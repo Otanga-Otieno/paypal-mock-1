@@ -35,7 +35,7 @@
                         <span>An "Earth-cousin" that orbits a star like our sun in the habitable zone, where liquid water could exist.</span><br>
                         <input type="text" name="amount" id="price2" value="0.10" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton2" type="button" onclick="showQuantityCounter(2)">$0.10</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter2" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(2)">-</span><input class="bg-white text-dark" name="qty2" id="qcount2" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(2)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter2" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(2)">-</span><input class="bg-white text-dark" name="qty2" id="qcount2" value="0" style="width: 1rem;" oninput="validateQuantity()"><span class="bg-primary p-1 qhandler" onclick="qinc(2)">+</span></span>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                         <span>A possible ocean world orbiting in the habitable zone—the region around a star where the temperature is right for liquid water, a requirement for life on Earth.</span><br>
                         <input type="text" name="amount" id="price3" value="0.25" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton3" type="button" onclick="showQuantityCounter(3)">$0.25</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter3" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(3)">-</span><input class="bg-white text-dark" name="qty3" id="qcount3" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(3)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter3" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(3)">-</span><input class="bg-white text-dark" name="qty3" id="qcount3" value="0" style="width: 1rem;" oninput="validateQuantity()"><span class="bg-primary p-1 qhandler" onclick="qinc(3)">+</span></span>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         <span>GJ 667 C c is a super Earth exoplanet that orbits an M-type star. Its mass is 3.8 Earths, it takes 28.1 days to complete one orbit of its star, and is 0.125 AU from its star. Its discovery was announced in 2011.</span><br>
                         <input type="text" name="amount" id="price4" value="0.50" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton4" type="button" onclick="showQuantityCounter(4)">$0.50</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter4" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(4)">-</span><input class="bg-white text-dark" name="qty4" id="qcount4" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(4)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter4" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(4)">-</span><input class="bg-white text-dark" name="qty4" id="qcount4" value="0" style="width: 1rem;" oninput="validateQuantity()"><span class="bg-primary p-1 qhandler" onclick="qinc(4)">+</span></span>
                     </div>
                 </div>
             </div>
