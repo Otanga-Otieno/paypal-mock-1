@@ -22,7 +22,7 @@
                             Kepler-186 f is a super Earth exoplanet that orbits an M-type star. Its mass is 1.71 Earths, it takes 129.9 days to complete one orbit of its star, and is 0.432 AU from its star. Its discovery was announced in 2014.</span><br>
                         <input type="text" name="amount" id="price1" value="0.05" hidden>
                         <button class="btn btn-primary m-3" id="pricebutton1" type="button" onclick="showQuantityCounter(1)">$0.05</button>
-                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter1" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(1)">-</span><input class="bg-white text-dark" name="qty1" id="qcount1" value="0" style="width: 1rem;"><span class="bg-primary p-1 qhandler" onclick="qinc(1)">+</span></span>
+                        <span class="btn btn-primary quantcount m-3 p-0" id="qcounter1" hidden><span class="bg-primary p-1 qhandler" onclick="qdec(1)">-</span><input class="bg-white text-dark" name="qty1" id="qcount1" value="0" style="width: 1rem;" oninput="validateQuantity()"><span class="bg-primary p-1 qhandler" onclick="qinc(1)">+</span></span>
                     </div>
                 </div>
             </div>

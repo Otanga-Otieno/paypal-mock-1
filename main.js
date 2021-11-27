@@ -17,7 +17,7 @@ function qdec(qid) {
 function forceDec(qid) {
     var count = document.getElementById("qcount" + qid);
     var countQ = count.value;
-    count.value = --countQ
+    if (count.value > 0) count.value = --countQ
 
     cartCount();
 }
@@ -90,4 +90,8 @@ function showCheckoutButton(bool) {
     } else {
         checkoutButton.setAttribute("hidden", true);
     }
+}
+
+function validateQuantity() {
+    cartCount();
 }
