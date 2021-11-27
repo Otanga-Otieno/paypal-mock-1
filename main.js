@@ -92,6 +92,14 @@ function showCheckoutButton(bool) {
     }
 }
 
-function validateQuantity() {
+function validateQuantity(qid) {
+    var qcount = document.getElementById("qcount" + qid);
+    var quantity = qcount.value;
+
+    if(isNaN(quantity)) {
+        qcount.value = 1;
+    } else {
+        if(quantity < 0) qcount.value = 1;
+    }
     cartCount();
 }
