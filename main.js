@@ -64,4 +64,30 @@ function cartCount() {
 
     var itemDisplay = document.getElementById("totalitm");
     itemDisplay.innerText = items;
+
+    if(parseFloat(totalAmount) != 0) {
+        if(!isCheckout()) showCheckoutButton(true);
+    } else {
+        showCheckoutButton(false);
+    }
+}
+
+function isCheckout() {
+    const checkoutButton = document.getElementById("checkoutBtn");
+
+    if(window.getComputedStyle(checkoutButton).display != "none") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function showCheckoutButton(bool) {
+    const checkoutButton = document.getElementById("checkoutBtn");
+
+    if(bool === true) {
+        checkoutButton.removeAttribute("hidden");
+    } else {
+        checkoutButton.setAttribute("hidden", true);
+    }
 }
