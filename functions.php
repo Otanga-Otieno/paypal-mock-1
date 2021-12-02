@@ -10,7 +10,7 @@ require 'config.php';
 
 function get_access_token() {
 
-  $url = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
+  $url = "https://api-m.paypal.com/v1/oauth2/token";
   $client_id = Client::CLIENT_ID;
   $client_secret = Client::CLIENT_SECRET;
   
@@ -42,7 +42,7 @@ function get_access_token() {
 
 function post_order($amount, $one, $two, $three, $four) {
 
-  $url = "https://api-m.sandbox.paypal.com/v2/checkout/orders";
+  $url = "https://api-m.paypal.com/v2/checkout/orders";
 
   $curl = curl_init();
   $access_token = get_access_token();
@@ -82,7 +82,7 @@ function post_order($amount, $one, $two, $three, $four) {
 
 function capture_order($token, $payer_id) {
 
-  $url = "https://api.sandbox.paypal.com/v2/checkout/orders/$token/capture";
+  $url = "https://api.paypal.com/v2/checkout/orders/$token/capture";
   $access_token = get_access_token();
 
   $curl = curl_init();
@@ -104,7 +104,7 @@ function capture_order($token, $payer_id) {
 
 function get_invoice_number() {
 
-  $url = "https://api-m.sandbox.paypal.com/v2/invoicing/generate-next-invoice-number";
+  $url = "https://api-m.paypal.com/v2/invoicing/generate-next-invoice-number";
   $access_token = get_access_token();
 
   $curl = curl_init();
