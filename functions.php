@@ -11,8 +11,8 @@ require 'config.php';
 function get_access_token() {
 
   $url = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
-  $client_id = "ATH6jxOJg7yTVeBdOVGRvLfvMIt3re1o7VuChtJ2lWQV-PPWy9yGE9xRfRqexa6D9KNwDXV_-ktBodJh";
-  $client_secret = "EIdTvQ4W9K8dwr7RGJwmIMu2aNR2OpEKl4CyIIjepL4a4ggIw2grGIMfdOgcxxv1YOhyeFIxwp7T1k-g";
+  $client_id = Client::CLIENT_ID;
+  $client_secret = Client::CLIENT_SECRET;
   
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL, $url);
