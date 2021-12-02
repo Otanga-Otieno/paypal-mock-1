@@ -183,7 +183,7 @@ function unrollTokensSilent($arr) {
   $size = count($arr);
 
   for($i=0; $i<$size; $i++) {
-      $body = $body.$arr[$i]." - ".getTokenType($arr[$i])."\n";
+      $body = $body.$arr[$i]." - ".getTokenType($arr[$i])."\n\n";
   }
 
   return $body;
