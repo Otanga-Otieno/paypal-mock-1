@@ -151,9 +151,9 @@ function generateMultiToken($one, $two, $three, $four) {
 
 function getTokenType($token) {
 
-  $len = strlen($len);
+  $len = strlen($token);
 
-  switch($token) {
+  switch($len) {
       case 10:
           return "Kepler-186f";
           break;
