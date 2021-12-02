@@ -11,7 +11,7 @@ $payer_id = $_GET['PayerID'];
 
 $order = capture_order($token, $payer_id);
 $email = "alvinotanga@gmail.com";//$order["payer"]["email_address"];
-echo nl2br($order["payer"]["email_address"]."\n\n");
+//echo nl2br($order["payer"]["email_address"]."\n\n");
 
 
 $alienTokens = generateMultiToken($alienTokenOne, $alienTokenTwo, $alienTokenThree, $alienTokenFour);

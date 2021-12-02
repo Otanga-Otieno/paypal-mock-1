@@ -178,6 +178,18 @@ function unrollTokens($arr) {
 
 }
 
+function unrollTokensSilent($arr) {
+  $body = "";
+  $size = count($arr);
+
+  for($i=0; $i<$size; $i++) {
+      $body = $body.$arr[$i]." - ".getTokenType($arr[$i])."\n";
+  }
+
+  return $body;
+
+}
+
 function send_email($user, $subject, $body, $altbody) {
 
   $mail = new PHPMailer(true);
@@ -203,7 +215,7 @@ function send_email($user, $subject, $body, $altbody) {
 function send_tokens($email, $tokens) {
 
   $subject = "Alien Tokens";
-  $body = "Here are your tokens, keep them safe :)\n\n ".unrollTokens($tokens);
+  $body = "Here are your tokens, keep them safe :)\n\n ".unrollTokensSilent($tokens);
   send_email($email, $subject, $body, $body);
 
 }
