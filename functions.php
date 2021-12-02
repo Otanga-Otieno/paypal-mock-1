@@ -1,5 +1,13 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/SMTP.php';
+require 'config.php';
+
 function get_access_token() {
 
   $url = "https://api-m.sandbox.paypal.com/v1/oauth2/token";
@@ -167,6 +175,36 @@ function unrollTokens($arr) {
   for($i=0; $i<$size; $i++) {
       echo nl2br($arr[$i]." - ".getTokenType($arr[$i])."\n");
   }
+
+}
+
+function send_email($user, $subject, $body, $altbody) {
+
+  $mail = new PHPMailer(true);
+  $mail->isSMTP();
+  $mail->Host = Config::SMTP_HOST;
+  $mail->SMTPAuth   = true;
+  $mail->Username   = Config::SMTP_USER;
+  $mail->Password   = Config::SMTP_PASSWORD;
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+
+  $mail->setFrom('projects@otanga.co.ke', 'Alien Tokens');
+  $mail->addAddress($user);
+
+  $mail->isHTML(true);
+  $mail->Subject = $subject;
+  $mail->Body = $body;
+  $mail->Altbody = $altbody;
+
+  $mail->send();
+
+}
+
+function send_tokens($email, $tokens) {
+
+  $subject = "Alien Tokens";
+  $body = "Here are your tokens, keep them safe :)\n\n ".unrollTokens($tokens);
+  send_email($email, $subject, $body, $body);
 
 }
 
