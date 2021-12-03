@@ -13,3 +13,7 @@ img {
 .qhandler:hover {
     background-color: #6c757d !important;
 }
+
+.imgtoken {
+    width: 80vw;
+}
