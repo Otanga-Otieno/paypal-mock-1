@@ -60,7 +60,7 @@ function cartCount() {
     }
 
     var amountDisplay = document.getElementById("totalamt");
-    amountDisplay.innerText = totalAmount;
+    amountDisplay.innerText = totalAmount.toFixed(2);
 
     var itemDisplay = document.getElementById("totalitm");
     itemDisplay.innerText = items;
