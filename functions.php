@@ -215,8 +215,9 @@ function send_email($user, $subject, $body, $altbody) {
 function send_tokens($email, $tokens) {
 
   $subject = "Alien Tokens";
-  $body = "Here are your tokens, keep them safe :)\n\n ".unrollTokensSilent($tokens);
-  send_email($email, $subject, $body, $body);
+  $body = "<div style='background-color: #fcba03; color: black;' > <div style='background-color: black; color: #fcba03;' ><h2>Alien Tokens</h2></div>".unrollTokensSilent($tokens)." </div>";
+  $altbody = "Here are your tokens, keep them safe :)\n\n ".unrollTokensSilent($tokens);
+  send_email($email, $subject, $body, $altbody);
 
 }
 
