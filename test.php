@@ -1,5 +1,7 @@
 <?php
 
+require "functions.php";
+
 $email = "alvinotanga@gmail.com";
 
 $alienTokens = generateMultiToken("1", "2", "2", "1");
