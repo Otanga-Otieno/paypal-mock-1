@@ -195,7 +195,7 @@ function unrollTokensHtml($arr) {
   $size = count($arr);
 
   for($i=0; $i<$size; $i++) {
-    $body = $body.$arr[$i]." - ".getTokenType($arr[$i])."<br><br>";
+    $body = $body.$arr[$i]." - <span style='color: #0345fc !important;'>".getTokenType($arr[$i])."</span> <br><br>";
   }
 
   return $body;
@@ -227,7 +227,7 @@ function send_email($user, $subject, $body, $altbody) {
 function send_tokens($email, $tokens) {
 
   $subject = "Alien Tokens";
-  $body = "<div style='background-color: #fcba03; color: black;' > <div style='background-color: black; color: #fcba03;' ><h2>Alien Tokens</h2></div>".unrollTokensHtml($tokens)." </div>";
+  $body = "<div style='background-color: #fcba03; color: black; text-align: center;' > <div style='background-color: black; color: #fcba03; text-align: center;' ><h2>Alien Tokens</h2></div> <span> You ordered some tokens. Here you go. </span><br><br>".unrollTokensHtml($tokens)." </div>";
   $altbody = "Here are your tokens, keep them safe :)\n\n ".unrollTokensSilent($tokens);
   send_email($email, $subject, $body, $altbody);
 
