@@ -124,6 +124,7 @@ function get_invoice_number() {
 
 /*************************** Token functions ***************************/
 
+//generate random token
 function generateAlienTokens($type, $quantity) {
 
   $arr = [];
@@ -137,6 +138,7 @@ function generateAlienTokens($type, $quantity) {
 
 }
 
+//generate all four types(lengths) of random tokens
 function generateMultiToken($one, $two, $three, $four) {
   $arr = array();
 
@@ -169,6 +171,7 @@ function getTokenType($token) {
 
 }
 
+//unroll and print tokens
 function unrollTokens($arr) {
   $size = count($arr);
 
@@ -178,6 +181,7 @@ function unrollTokens($arr) {
 
 }
 
+//unroll and return tokens
 function unrollTokensSilent($arr) {
   $body = "";
   $size = count($arr);
@@ -190,6 +194,7 @@ function unrollTokensSilent($arr) {
 
 }
 
+//unroll and return tokens with html syntax
 function unrollTokensHtml($arr) {
   $body = "";
   $size = count($arr);
