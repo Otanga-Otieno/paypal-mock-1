@@ -7,7 +7,7 @@ This project implements PayPal Order API using cURL library. It also implements 
 
 <br><br>
 
-An overview of the page
+An overview of the page:
 
 ![Alt text](https://otanga.co.ke/project-screenshots/paypalmock/paypalmockss1.png "Landing Page")
 <br/><br/><br/>
