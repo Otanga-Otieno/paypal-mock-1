@@ -66,7 +66,7 @@ function cartCount() {
     itemDisplay.innerText = items;
 
     if(parseFloat(totalAmount) != 0) {
-        if(!isCheckout()) showCheckoutButton(true);
+        showCheckoutButton(true);
     } else {
         showCheckoutButton(false);
     }
@@ -86,9 +86,9 @@ function showCheckoutButton(bool) {
     const checkoutButton = document.getElementById("checkoutBtn");
 
     if(bool === true) {
-        checkoutButton.removeAttribute("hidden");
+        checkoutButton.removeAttribute("disabled");
     } else {
-        checkoutButton.setAttribute("hidden", true);
+        checkoutButton.setAttribute("disabled", true);
     }
 }
 
