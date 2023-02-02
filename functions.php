@@ -21,8 +21,9 @@ function get_access_token() {
       "Accept: application/json",
       "Accept-Language: en_US"
   ));
-  curl_setopt($curl, CURL_SSL_VERIFYPEER, false);
-  curl_setopt($curl, CURL_SSLVERSION, 6);
+  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+  curl_setopt($curl, CURLOPT_SSLVERSION, 6);
   curl_setopt($curl, CURLOPT_USERPWD, $client_id.":".$client_secret);
   curl_setopt($curl, CURLOPT_POSTFIELDS, "grant_type=client_credentials");
   curl_setopt($curl, CURLOPT_POST, true);
