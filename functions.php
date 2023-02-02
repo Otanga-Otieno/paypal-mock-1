@@ -69,7 +69,6 @@ function post_order($amount, $one, $two, $three, $four) {
   $curl_response = curl_exec($curl);
 
   $json = json_decode($curl_response, true);
-  print_r($json);
 
   $approve_link = $json['links'][1]['href'];
   header('Location: '.$approve_link);
